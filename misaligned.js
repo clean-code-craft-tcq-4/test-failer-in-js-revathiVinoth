@@ -11,15 +11,7 @@ function print_color_map() {
   return majorColors.length * minorColors.length;
 }
 
-function lengthOfColors() {
-  const majorColors = ["White", "Red", "Black", "Yellow", "Violet"];
-  const minorColors = ["Blue", "Orange", "Green", "Brown", "Slate"];
-  return majorColors.length * minorColors.length;
-}
-result = lengthOfColors();
-expect(result).equals(25);
-expect(result).equals(25);
 result = print_color_map();
-
-//Add negative scenario
+expect(result).equals(25);
+expect(result).equals(24);
 console.log("All is well (maybe!)");
